@@ -1,0 +1,10 @@
+2026-10-04T17:40:01.102Z stdout F [checkout-service-7d6f54c86-8x2lq] [INFO] Starting checkout processing batch #4012...
+2026-10-04T17:40:15.341Z stdout F [checkout-service-7d6f54c86-8x2lq] [INFO] Loading order items into memory cache (size=142MB)
+2026-10-04T17:40:32.882Z stdout F [checkout-service-7d6f54c86-8x2lq] [WARN] High memory consumption detected: 480MB / 512MB cgroup limit (93.7% utilized)
+2026-10-04T17:40:40.119Z stdout F [checkout-service-7d6f54c86-8x2lq] [WARN] GC pause time exceeded 1200ms: java.lang.OutOfMemoryError: Java heap space
+2026-10-04T17:40:44.201Z stderr F [checkout-service-7d6f54c86-8x2lq] [FATAL] Memory cgroup out of memory: Kill process 14210 (java) score 998 or sacrifice child
+2026-10-04T17:40:44.205Z stderr F [checkout-service-7d6f54c86-8x2lq] [FATAL] kernel: [81923.112] Out of memory: Killed process 14210 (java) total-vm:1894200kB, anon-rss:512400kB, file-rss:120kB
+2026-10-04T17:40:45.012Z stderr F pod/checkout-service-7d6f54c86-8x2lq container "checkout" in namespace "production" terminated with exit code 137 (OOMKilled)
+2026-10-04T17:40:46.500Z stderr F kubelet: Readiness probe failed: Get "http://10.244.2.14:8080/healthz": dial tcp 10.244.2.14:8080: connect: connection refused
+2026-10-04T17:40:50.120Z stderr F kubelet: Back-off restarting failed container checkout in pod checkout-service-7d6f54c86-8x2lq_production(92b4fae0-5a3d-4c31-9238-d98c)
+2026-10-04T17:41:05.340Z stderr F kubelet: CrashLoopBackOff: back-off 10s restarting failed container=checkout pod=checkout-service-7d6f54c86-8x2lq

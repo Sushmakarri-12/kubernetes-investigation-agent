@@ -1,0 +1,9 @@
+2026-10-04T16:15:00.001Z stdout F [payment-gateway-69d5fb8bd6-m9z4p] [INFO] Initializing payment gateway container v2.4.0 in namespace staging
+2026-10-04T16:15:05.120Z stdout F [payment-gateway-69d5fb8bd6-m9z4p] [INFO] Connecting to payment orchestrator...
+2026-10-04T16:15:15.540Z stderr F [payment-gateway-69d5fb8bd6-m9z4p] [WARN] Startup probe delay: service not listening on port 8443 yet
+2026-10-04T16:15:20.100Z stderr F kubelet: Liveness probe failed: HTTP probe failed with statuscode: 503
+2026-10-04T16:15:25.210Z stderr F kubelet: Readiness probe failed: Get "http://10.244.1.88:8443/ready": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026-10-04T16:15:30.312Z stderr F kubelet: Container payment-gateway failed liveness probe, will be restarted
+2026-10-04T16:15:31.002Z stderr F kubelet: Killing container with id containerd://payment-gateway: Container failed liveness probe
+2026-10-04T16:15:35.400Z stderr F kubelet: Back-off restarting failed container payment-gateway in pod payment-gateway-69d5fb8bd6-m9z4p
+2026-10-04T16:15:50.001Z stderr F kubelet: CrashLoopBackOff: back-off 20s restarting failed container

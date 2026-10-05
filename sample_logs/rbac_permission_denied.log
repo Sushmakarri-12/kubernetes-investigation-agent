@@ -1,0 +1,4 @@
+2026-10-04T14:10:00.120Z stdout F [custom-operator-56c4d7b7db-k8m5w] [INFO] Leader election succeeded for operator replica
+2026-10-04T14:10:02.450Z stderr F [custom-operator-56c4d7b7db-k8m5w] [ERROR] Reconciler error: configmaps "app-config" is forbidden: User "system:serviceaccount:monitoring:prometheus-operator" cannot get resource "configmaps" in API group "" in the namespace "production"
+2026-10-04T14:10:05.100Z stderr F [custom-operator-56c4d7b7db-k8m5w] [ERROR] 403 Forbidden: system:serviceaccount:monitoring:prometheus-operator lacks permissions to list customresourcedefinitions.apiextensions.k8s.io
+2026-10-04T14:10:10.220Z stderr F [custom-operator-56c4d7b7db-k8m5w] [FATAL] Controller sync aborted due to persistent RBAC access denied errors

@@ -1,0 +1,6 @@
+2026-10-04T15:20:00.010Z stdout F [inventory-api-5c94f576b8-29hjt] [INFO] Starting inventory sync worker
+2026-10-04T15:20:02.140Z stderr F [inventory-api-5c94f576b8-29hjt] [ERROR] dial tcp: lookup postgres-db.production.svc.cluster.local on 10.96.0.10:53: no such host
+2026-10-04T15:20:05.210Z stderr F [inventory-api-5c94f576b8-29hjt] [ERROR] dial tcp: lookup redis-cache.production.svc.cluster.local: CoreDNS server failure (SERVFAIL)
+2026-10-04T15:20:08.500Z stderr F [inventory-api-5c94f576b8-29hjt] [ERROR] Failed to connect to database backend: Temporary failure in name resolution
+2026-10-04T15:20:12.330Z stderr F [inventory-api-5c94f576b8-29hjt] [ERROR] HTTP 504 Gateway Timeout: upstream database connection timed out
+2026-10-04T15:20:15.001Z stderr F kubelet: Readiness probe failed: Get "http://10.244.3.45:8080/health": connect: connection refused
